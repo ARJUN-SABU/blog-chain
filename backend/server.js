@@ -19,8 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //connect to mongo DB
-const dbURI =
-  "mongodb+srv://arjunsabu99:zet4OzXXYTZrkMTF@cluster0.ibgcpfu.mongodb.net/blog-chain?retryWrites=true&w=majority";
+const dbURI = process.env.MONGODB_URI;
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })

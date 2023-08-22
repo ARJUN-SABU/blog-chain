@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.blog_capsule {
+  display: flex;
+  max-width: 1000px;
+  margin-bottom: 80px;
+  width: 100% !important;
+  box-shadow: 0 0 20px 0 black;
+  transition: 0.2s all ease-in;
+  border-radius: 50px;
+}
+
+.blog_capsule:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.capsule_left {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.capsule_left h1 {
+  font-size: 3rem;
+}
+
+.capsule_left h4 {
+  font-size: 1.2rem;
+  color: rgb(4, 133, 219);
+}
+
+.capsule_left div {
+  display: flex;
+  margin-top: 3px;
+}
+
+.capsule_left div p {
+  margin: 0 5px 0 0;
+}
+
+.capsule_right {
+  background-color: black;
+  color: white;
+  flex: 1;
+  /* width: 40%; */
+  padding: 30px 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.capsule_right h1 {
+  font-size: 2.4rem;
+}
+
+.author {
+  font-size: 1rem;
+  margin: 20px 0 20px;
+}
+
+.snippet {
+  font-size: 1.2rem;
+  margin: 0 0px 10;
+}
+
+@media (max-width: 650px) {
+  .blog_capsule {
+    flex-direction: column;
+    align-items: center;
+  }
+  .capsule_left {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+  }
+
+  .capsule_left div {
+    margin-top: 0;
+  }
+
+  .capsule_left h1 {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+
+  .capsule_left h4 {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+  .capsule_left div p {
+    font-size: 0.8rem;
+  }
+  .capsule_right {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media (max-width: 302px) {
+  .capsule_left h1 {
+    font-size: 0.7rem;
+  }
+  .capsule_left div p {
+    font-size: 0.6rem;
+  }
+  .capsule_left h4 {
+    font-size: 0.7rem;
+  }
+}
